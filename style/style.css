@@ -1,0 +1,557 @@
+/* add roboto font faminly */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif !important;
+    background-color: rgb(233, 233, 233);
+}
+
+:root {
+    --family-roboto: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* start hum-burger */
+
+.trigger-main {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    background: transparent;
+}
+
+.trigger-main a {
+    display: inline-block;
+    position: relative;
+    z-index: 200;
+}
+
+.trigger-main a span {
+    display: block;
+    height: 3px;
+    width: 25px;
+    background-color: #000;
+    margin-top: 5px;
+    transition: transform .5s ease;
+    -webkit-transition: -webkit-transform .5s ease;
+}
+
+
+/* start hum-burger */
+
+
+/* start header navbar*/
+
+.header {
+    width: 100%;
+    height: 130px;
+    padding: 2px;
+}
+
+.header .navbar {
+    position: absolute;
+    top: 0;
+    left: -300px;
+    bottom: 0;
+    padding-top: 70px;
+    width: 300px;
+    z-index: 20;
+    background-color: rgb(233, 233, 233);
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    transition: transform .5s ease;
+    -webkit-transition: -webkit-transform .5s ease;
+}
+
+.navbar.open {
+    transform: translateX(100%);
+}
+
+.header .navbar li {
+    list-style: none;
+    margin: 10px 35px;
+}
+
+.header .navbar p {
+    display: block;
+    font-size: .8rem;
+    color: gray;
+    margin-left: 20px;
+}
+
+.header .navbar li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    font-family: var(--family-roboto);
+    font-weight: 600;
+}
+
+.header .navbar li a:hover {
+    color: burlywood;
+}
+
+.header .navbar li:nth-child(1) {
+    margin-top: 30px;
+}
+
+.header .navbar li:nth-child(7) {
+    margin-top: 25px;
+}
+
+.header .navbar li:nth-child(7) a {
+    color: burlywood;
+}
+
+.header .navbar li:nth-child(8) {
+    font-weight: 600;
+}
+
+
+/* end header navbar */
+
+
+/* start header navbar company detail */
+
+.header .company-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+}
+
+.header .logo {
+    margin-left: 140px;
+}
+
+.header .com-name h1 {
+    font-size: 3.4rem;
+    letter-spacing: 1px;
+    font-family: 'Times New Roman', Times, serif !important;
+    margin: 0;
+    font-weight: 900;
+}
+
+.header .com-name p {
+    font-size: .9rem;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0
+}
+
+.header .since p {
+    font-size: .8rem;
+    margin: 0;
+    margin: 40px 50px 0 0;
+}
+
+.header .company-detail h1,
+p {
+    text-transform: uppercase;
+}
+
+
+/* end header navbar company detail */
+
+
+/* starting about section  */
+
+.container .about-content {
+    padding: 60px 260px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* line create  */
+
+.span-devider,
+.container .about-content .destination-devider {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.span-devider span {
+    display: inline-block;
+    width: 100px;
+    height: 2px;
+    background-color: #000;
+    text-align: center;
+}
+
+.span-devider h4 {
+    margin: 30px;
+}
+
+
+/* line create  */
+
+.container .about-content .destination-devider h1 {
+    padding: 8px 0;
+}
+
+.container .about-content .destination-devider span {
+    display: inline-block;
+    width: 600px;
+    height: 2px;
+    background-color: #000;
+    text-align: center;
+}
+
+.container .about-content p {
+    padding: 25px 0;
+    text-align: justify;
+    font-size: .9rem;
+    color: gray;
+}
+
+.container .about-content p span {
+    color: #000;
+    font-weight: 700 !important;
+}
+
+.btn {
+    color: white;
+    background-color: #000;
+    border-radius: 0 !important;
+    padding: 13px 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+
+/* ending about section  */
+
+
+/* starting collection section */
+
+.collection-section {
+    padding: 30px 0;
+}
+
+.collection-section .carousel .d-block {
+    margin: 15px 0;
+}
+
+.btn-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ending collection section */
+
+
+/* starting watch section */
+
+.media-section {
+    padding: 30px 0;
+}
+
+
+/* ending collection section */
+
+
+/* starting media section */
+
+.remove-mg {
+    padding: 0;
+    margin: 0;
+}
+
+.parent {
+    position: relative;
+}
+
+.parent video {
+    width: 100%;
+    height: 100%;
+}
+
+.media-section .btn-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* ending media section */
+
+
+/* starting pic section */
+
+.ins-section .container-fluid img {
+    transition: all .3s;
+    margin: 15px 0 !important;
+}
+
+.ins-section .container-fluid img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ending pic section */
+
+
+/* starting footer section */
+
+footer {
+    background-color: #000 !important;
+    margin-top: 20px;
+    padding: 30px 0;
+}
+
+.footer-section ul li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.footer-section ul li a {
+    padding: 3px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-section .footer-logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-section .footer-logo img {
+    filter: invert(100%);
+}
+
+.footer-section .footer-logo a {
+    text-decoration: none;
+}
+
+.footer-section .footer-logo h2 {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+.footer-section .footer-logo p {
+    font-size: 11px;
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+
+/* ICONS */
+
+.footer-section .icons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-section .icons .fa {
+    color: #000;
+    font-size: 20px;
+}
+
+.footer-section .icons a {
+    text-decoration: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 100%;
+    width: 45px;
+    height: 45px;
+}
+
+.footer-section .icons a:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+
+/* starting footer form  */
+
+.footer-section .form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-section .form-content h3 {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.footer-section .footer-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-section .footer-form input {
+    width: 250px;
+    padding: 6px;
+    background-color: #000;
+    border: none;
+    border: 1px solid gray;
+}
+
+.footer-section .footer-form .submit {
+    background-color: #fff;
+    color: #000;
+    font-weight: 500;
+    padding: 5px 18px;
+    border: 1px solid gray;
+    cursor: pointer;
+    outline: none;
+    font-family: var(--family-roboto);
+    border-radius: 4px;
+}
+
+.footer-section .footer-form .submit:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.footer-section p {
+    color: #fff;
+    font-size: 11px;
+}
+
+.footer-section .scrolltip {
+    position: relative;
+}
+
+.footer-section .arrow {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 50px;
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(185, 185, 185);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section .arrow:hover {
+    color: white;
+}
+
+
+/* ending footer section */
+
+@media(max-width:1200px) {
+    .container .about-content {
+        padding: 55px 170px;
+    }
+}
+
+@media(max-width:992px) {
+    h1 {
+        font-size: 2rem;
+    }
+    .header .com-name h1 {
+        font-size: 2.6rem;
+    }
+    .header .com-name p {
+        font-size: .8rem;
+    }
+    .container .about-content {
+        padding: 50px 90px;
+    }
+    .span-devider span {
+        width: 95px;
+    }
+    .span-devider h4 {
+        margin: 20px;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    .container .about-content .destination-devider span {
+        width: 515px;
+    }
+}
+
+@media(max-width:768px) {
+    .header {
+        height: auto;
+    }
+    .header .company-detail {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header .com-name h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    .header .since p {
+        font-size: .9rem;
+        margin: 10px 0;
+    }
+    .span-devider h4 {
+        margin: 10px;
+        font-size: 1rem;
+    }
+    .header .logo {
+        margin-left: 0;
+    }
+    .container .about-content {
+        padding: 50px 0;
+    }
+    .container .about-content .destination-devider span {
+        width: 460px;
+    }
+    .footer-section .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+    .footer-section .footer-logo {
+        justify-content: center;
+    }
+    .footer-section .icons {
+        justify-content: center;
+    }
+    .footer-section .icons a {
+        margin: 0 20px;
+    }
+    .footer-section .form-content {
+        margin: 20px 0;
+    }
+    h1 {
+        font-size: 1.3rem;
+    }
+    .container .about-content .destination-devider span {
+        width: 100%;
+    }
+    .btn {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+}
